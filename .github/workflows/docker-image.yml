@@ -27,7 +27,7 @@ jobs:
       #  run: npm test
         
       - name: node build
-        run: npm build
+        run: npm run build
 
       - name: Docker 이미지 빌드
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-world-vue:${{ env.VERSION }} .
